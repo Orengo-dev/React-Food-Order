@@ -20,13 +20,8 @@ function App() {
 
   return (
     <CartProvider>
-<<<<<<< HEAD
-      {cartIsShown && <div>Cart...</div>}
+      {cartIsShown && <Cart onClose={hiSdeCartHandler}/>}
       <Header onShowCart={showCartHandler}/>
-=======
-      <Cart />
-      <Header />
->>>>>>> feat/cart
       <main>
         <Meals />
       </main>
